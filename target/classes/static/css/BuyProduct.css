@@ -1,0 +1,151 @@
+/* Add these new styles to your existing CSS */
+
+/* Controls Container */
+.controls-container {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Sort Options */
+.sort-options {
+    position: relative;
+}
+
+.sort-options::after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--dark-color);
+}
+
+#sortSelect {
+    appearance: none;
+    padding: 10px 40px 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    background-color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#sortSelect:hover {
+    border-color: var(--primary-color);
+}
+
+/* No Results Message */
+.no-results-message {
+    text-align: center;
+    padding: 50px 20px;
+    display: none;
+}
+
+.no-results-message i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.no-results-message h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.no-results-message p {
+    color: #666;
+}
+
+/* Quick View Enhancement */
+.quick-view {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.item-card:hover .quick-view {
+    bottom: 0;
+}
+
+/* Buy Now Button */
+.add-to-cart {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.add-to-cart:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 2;
+    padding: 5px;
+}
+
+.wishlist-btn:hover, .wishlist-btn.active i {
+    color: var(--primary-color);
+}
+
+.wishlist-btn i.active {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .controls-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .category-tabs {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .sort-options {
+        width: 100%;
+    }
+    
+    #sortSelect {
+        width: 100%;
+    }
+}

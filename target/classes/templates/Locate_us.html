@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>YumHunt</title>
+	<link rel="icon" type="image/x-icon" href="./img/b.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{/css/Locate_us.css}" />
+	<style>
+		.icons{
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<nav th:replace="~{Navigation::navbar()}"></nav>
+	<center>
+		<h1 style="color: orangered; ">Our Location</h1>
+		<small style="color: red;font-weight: bold;">Internet required..</small>
+	</center>
+	<div class="location">
+<section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.265588856342!2d73.9145564141366!3d18.562061287384854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1674150882329!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="contact-icon fas fa-home"></i>
+                    <span>
+                        <h5>3rd Floor, Tower B, ICC Tech Park, Survey No. 163/1, Pune Nagar Road, opposite Wakad Police Station, near Bhumkar Chowk, Wakad, Pune, Maharashtra 411057</h5>
+                        <p>Pune, India</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="contact-icon fas fa-phone"></i>
+                    <span>
+                        <h5>+918657904321</h5>
+                        <p>10AM to 8PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="contact-icon fas fa-envelope"></i>
+                    <span>
+                        <h5>yumhunt@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="visit-btn red-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4 style="text-align: center;">About Us</h4>
+        <p style="text-align: center;">
+        ”Explore our wide range of products designed to enhance your life."
+        </p>
+            <p style="text-align: center;">YumHunt</pstyle="text-align: center;">
+        </div>
+    </section>
+</body>
+
+</html>
